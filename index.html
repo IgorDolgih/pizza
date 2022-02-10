@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>PizzaMaker</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>PizzaMaker</header>
+      <nav class="mainmenu">
+        <ul>
+          <li>
+            <a href="#constructor" class="mainmenu__link">конструктор</a>
+          </li>
+          <li class="cart">
+            <a href="#cart" class="mainmenu__link">
+              <ion-icon name="basket"></ion-icon>корзина <span>0</span>
+            </a>
+          </li>
+          <li>
+            <a class="mainmenu__link myHistory" href="#history"
+              >история заказов</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content" id="content"></div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"
+    ></script>
+    <script defer src="firebase.js"></script>
+    <script defer src="pizza.js"></script>
+  </body>
+</html>
